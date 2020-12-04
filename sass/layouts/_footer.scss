@@ -1,8 +1,14 @@
+footer * {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
 .logo-footer {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   color: $white;
 }
 
