@@ -127,12 +127,24 @@ body * {
   margin: 0 auto;
 }
 
-/* @media screen and (min-width: 480px) {
-  .container {
+@media (min-width: 480px) {
+  .container .container {
     width: 480px;
   }
 }
- */
+
+@media (min-width: 768px) {
+  .container .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .container {
+    width: 1200px;
+  }
+}
+
 header * {
   text-decoration: none;
   font-weight: 500;
