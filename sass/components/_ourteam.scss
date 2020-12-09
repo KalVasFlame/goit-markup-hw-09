@@ -34,7 +34,7 @@
   margin-bottom: 30px;
 }
 
-@include for-size(tablet) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list-people {
     text-align: center;
     width: 270px;

@@ -1,13 +1,6 @@
 .feature-item {
   box-sizing: border-box;
 
-  /* &:not(:first-child) {
-    margin-left: 30px;
-  } */
-  /* &:nth-child(4n) {
-    margin-right: 0;
-  } */
-
   &::before {
     display: block;
     justify-content: center;
@@ -72,28 +65,18 @@
 @include for-size(desktop) {
   .feature-item {
     width: calc((100% - 90px) / 4);
-
     width: 270px;
+
+    &:not(:first-child) {
+      margin-right: 30;
+    }
   }
 
   .feature-list {
     display: flex;
-    justify-content: space-between;
-
-    &:not(:last-child) {
-      margin-right: 30;
-    }
+    justify-content: center;
   }
 }
-
-/* .feature-item {
-  width: calc((100% - 90px) / 4);
-}
- */
-
-/* element .feature-item {
-  width: 270px;
-} */
 
 .feature-item-title {
   text-align: center;
