@@ -12,10 +12,23 @@ footer * {
   color: $white;
 }
 
+.footer-widget {
+  margin-bottom: 60px;
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
+}
+
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 
   .adress {
     font-size: 14px;
@@ -46,9 +59,15 @@ footer * {
 }
 
 .footer-container {
-  display: flex;
-}
+  text-align: center;
 
-.footer-social-links-container {
-  margin-left: 70px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }

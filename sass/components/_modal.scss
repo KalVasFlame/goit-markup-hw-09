@@ -21,15 +21,32 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  transform: translate(-50%, -50%);
+  animation: animate 100ms;
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
   background-color: $white;
   padding: 40px;
   transition: transform 0.5s;
   z-index: 50;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  &::before {
+    content: "";
+  }
+
+  @media screen and(min-width: 768px) {
+    top: 50%;
+    width: 450px;
+  }
+  @media screen and(min-width: 1230px) {
+    top: 50%;
+    width: 100%;
+    max-width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close-btn {
@@ -90,6 +107,10 @@
   letter-spacing: 0.03em;
   color: $title;
   margin-bottom: 12px;
+
+  @media screen and(min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .field {
