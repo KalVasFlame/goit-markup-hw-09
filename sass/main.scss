@@ -1,7 +1,9 @@
 @import "./base/fonts";
 @import "./utils/variables";
+@import "./utils/mixin";
+@import "./base/body";
+@import "./base/container";
 @import "./layouts/header";
-@import "./layouts/body";
 @import "./components/modal";
 @import "./components/hero";
 @import "./components/features";
