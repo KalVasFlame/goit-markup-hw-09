@@ -60,20 +60,26 @@ header ul a:focus {
 }
 
 .header-div {
+  width: 100%;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .nav {
   margin-left: 93px;
   align-items: center;
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  display: none;
 }
 
 .site-nav {
-  display: flex;
+  // display: flex;
+  display: none;
 }
 
 .site-nav > .item:not(:last-child) {
@@ -85,6 +91,7 @@ header ul a:focus {
 }
 
 .mailtel-nav {
+  display: none;
   color: $text;
   margin-left: auto;
 }
@@ -104,9 +111,27 @@ header ul a:focus {
 .logo {
   display: flex;
   align-items: center;
+  flex-basis: 1;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   color: $logo-header;
+}
+.burger-menu {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
