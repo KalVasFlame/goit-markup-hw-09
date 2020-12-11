@@ -1,13 +1,13 @@
 .subscribe-container {
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
@@ -20,6 +20,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscribe-form {

@@ -70,7 +70,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid tomato;
 }
 
 h1,
@@ -427,13 +426,14 @@ footer * {
 
 @media screen and (min-width: 768px) {
   .footer-widget {
-    margin-bottom: 0;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-widget {
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -495,7 +495,7 @@ footer * {
 
 @media screen and (min-width: 768px) {
   .footer-social-links-container {
-    margin-left: 70px;
+    width: 50%;
   }
 }
 
@@ -508,6 +508,7 @@ footer * {
 .footer--social-links-heading {
   margin-top: 12px;
   font-weight: 700;
+  text-align: left;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -518,7 +519,6 @@ footer * {
 .footer-social-links {
   display: flex;
   list-style: none;
-  justify-content: center;
   max-width: 100%;
   margin-top: 20px;
 }
@@ -565,7 +565,7 @@ footer * {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .subscribe-container {
     width: 100%;
     margin-left: auto;
@@ -573,7 +573,7 @@ footer * {
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .subscribe-container {
     margin-left: 93px;
   }
@@ -587,6 +587,12 @@ footer * {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-heading {
+    text-align: left;
+  }
 }
 
 .subscribe-form {

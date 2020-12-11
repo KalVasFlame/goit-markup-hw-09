@@ -100,7 +100,6 @@
 .feature-item-text {
   line-height: 1.71;
   color: $text;
-  text-align: justify;
 
   @include for-size(desktop) {
     text-align: left;
